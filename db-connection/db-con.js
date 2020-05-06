@@ -8,6 +8,7 @@ let dbCon = function () {
     mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true}).then(result => {
         console.log('Database connected using port:' + port);
     });
+
 }
 
 module.exports = dbCon;
